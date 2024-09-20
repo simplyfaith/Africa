@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw</title>
+    <link rel="stylesheet" href="./css/withdraw.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button -->
+        <button class="back-button" onclick="window.location.href='dashboard.html';">← Back</button>
+        <h1>Withdraw</h1>
+
+        <!-- Withdraw Section -->
+        <div class="withdraw-section">
+            <div class="balance-info">
+                <p>3% is to be deducted for site maintenance/projects.</p>
+                <p>Balance</p>
+                <h2>₦0.00</h2>
+            </div>
+
+            <!-- Withdraw Form -->
+            <form class="withdraw-form">
+                <p>You can ADD your bank info in your <a href="bankaccount.html">Bank Settings</a></p>
+
+                <label for="amount">Withdraw Amount</label>
+                <input type="number" id="amount" placeholder="0.000" required>
+
+                <label for="name">Cardholder Name</label>
+                <input type="text" id="name" value="Faith Taiwo" required>
+
+                <label for="bank">Bank Name</label>
+                <input type="text" id="bank" value="0" required>
+
+                <label for="account">Account Number</label>
+                <input type="number" id="account" placeholder="Enter Account Number" required>
+
+                <label for="otp">Withdrawal OTP</label>
+                <input type="number" id="otp" placeholder="Enter OTP" required>
+
+                <button type="submit" class="submit-button">Withdraw</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

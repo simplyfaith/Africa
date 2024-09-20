@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #5b982a, #67686a, black);
+    color: white;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .back-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button i {
+    margin-right: 8px;
+  }
+  
+  .recharge-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .account-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .input-section {
+    margin-top: 20px;
+  }
+  
+  .input-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .input-section input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .amount-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .amount-buttons button {
+    background-color: #5b982a;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-section {
+    margin-bottom: 20px;
+  }
+  
+  .upload-label {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px dashed white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ddd;
+  }
+  
+  .upload-input {
+    display: none;
+  }
+  
+  .confirm-button {
+    background-color: #5b982a;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .amount-buttons {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

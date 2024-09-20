@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+}
+
+.dashboard-header {
+    background: linear-gradient(135deg, #5b982a, #67686a, black);
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links li a i {
+    font-size: 18px; /* Adjust icon size */
+    color: inherit; /* Ensure icon inherits color from link */
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(135deg, #5b982a, #67686a, black);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 28px;
+    color: white; /* Brand Color */
+    font-weight: 600;
+}
+
+.account-info {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.wallet-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.wallet-card {
+    background: linear-gradient(135deg,  #5b982a , #67686a , black );
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    flex-basis: 48%;
+    text-align: center;
+}
+
+.wallet-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.wallet-amount {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.account-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.detail-card {
+    background: linear-gradient(135deg,  #5b982a , #67686a , black );
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.detail-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.detail-card p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wallet-summary {
+        flex-direction: column;
+    }
+
+    .wallet-card {
+        margin-bottom: 20px;
+    }
+
+    .account-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+.card-section {
+    background: linear-gradient(135deg,  #5b982a , #67686a , black );
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.card-item:last-child {
+    margin-bottom: 0;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2); 
+    cursor: pointer;
+}
+
+.icon {
+    flex: 0 0 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon i {
+    font-size: 26px;
+    color: #fff;
+}
+
+.text {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.arrow {
+    flex: 0 0 30px;
+    text-align: center;
+}
+
+.arrow i {
+    font-size: 22px;
+    color: #fff;
+}
+
+
+
+
+.card-link {
+    text-decoration: none; /* Remove the blue underline */
+    color: inherit; /* Inherit the color from the parent element */
+    display: block; /* Ensure the entire card area is clickable */
+}
+
+.card-link:visited {
+    color: inherit; /* Maintain the same color for visited links */
+}
+
+.card-link:hover {
+    color: inherit; /* Ensure no color change on hover */
+}
+
+.card-link:focus {
+    outline: none; /* Remove the default outline on focus */
+}
+
+
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .card-section {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .card-item {
+        padding: 15px;
+    }
+
+    .icon {
+        flex: 0 0 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .icon i {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .arrow i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-section {
+        max-width: 95%;
+    }
+
+    .card-item {
+        padding: 12px;
+    }
+
+    .icon {
+        flex: 0 0 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .icon i {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .arrow i {
+        font-size: 18px;
+    }
+}

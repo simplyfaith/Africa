@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="./css/account.css">
+</head>
+<body>
+    <div class="container">
+        <div class="account-box">
+            <div class="header">
+               <a href="dashboard.html"> <button class="back-btn">Back</button> </a>
+                <h1>My Account</h1>
+            </div>
+            <div class="account-details">
+                <div>
+                    <strong>Cardholder Name</strong><br>Faith Taiwo
+                </div>
+                <div>
+                    <strong>Bank Name</strong><br>Opay
+                </div>
+                <div>
+                    <strong>Bank Account</strong><br>7026595728
+                </div>
+                <div>
+                    <strong>Mobile</strong><br>07026595728
+                </div>
+                <div>
+                    <strong>Withdraw password</strong><br>236589
+                </div>
+            </div>
+            <button class="edit-btn">Edit Account</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+<div id="editAccountModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Account</h2>
+        <form class="edit-account-form">
+            <input type="text" placeholder="Faith Taiwo" value="Faith Taiwo" required>
+            <select required>
+                <option>Please select a bank</option>
+                <option value="Access Bank">Access Bank</option>
+                <option value="Citibank">Citibank</option>
+                <option value="Ecobank">Ecobank</option>
+                <option value="Fidelity Bank">Fidelity Bank</option>
+                <option value="First Bank">First Bank</option>
+                <option value="First City Monument Bank (FCMB)">First City Monument Bank (FCMB)</option>
+                <option value="Guaranty Trust Bank (GTBank)">Guaranty Trust Bank (GTBank)</option>
+                <option value="Heritage Bank">Heritage Bank</option>
+                <option value="Keystone Bank">Keystone Bank</option>
+                <option value="Opay">Opay</option>
+                <option value="Polaris Bank">Polaris Bank</option>
+                <option value="Stanbic IBTC Bank">Stanbic IBTC Bank</option>
+                <option value="Standard Chartered Bank">Standard Chartered Bank</option>
+                <option value="Sterling Bank">Sterling Bank</option>
+                <option value="Union Bank">Union Bank</option>
+                <option value="United Bank for Africa (UBA)">United Bank for Africa (UBA)</option>
+                <option value="Unity Bank">Unity Bank</option>
+                <option value="Wema Bank">Wema Bank</option>
+                <option value="Zenith Bank">Zenith Bank</option>
+            </select>
+            
+            <input type="text" placeholder="Bank Account" value="7026595728" required>
+            <input type="text" placeholder="Mobile phone" value="07026595728" required>
+            <input type="password" placeholder="Withdraw Password" value="236589" required>
+            <p class="info-text">* Cardholder name (5-30 characters).<br> * Mobile number is 10 digits.</p>
+            <button type="submit" class="save-btn">Save Account</button>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    // Get the modal
+var modal = document.getElementById("editAccountModal");
+
+// Get the button that opens the modal
+var btn = document.querySelector(".edit-btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "flex";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+    
+</body>
+</html>

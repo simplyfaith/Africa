@@ -1,0 +1,132 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #5b982a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header and back button styling */
+h1 {
+    font-size: 2rem;
+    color: #1e3c72;
+}
+
+.back-button {
+    background-color: #5b982a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.back-button:hover {
+    background-color: #4a7d23;
+}
+
+/* Withdraw section */
+.withdraw-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Balance information */
+.balance-info {
+    background-color: #5b982a;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.balance-info h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.balance-info p {
+    font-size: 1.1rem;
+}
+
+/* Form styling */
+.withdraw-form {
+    background: linear-gradient(135deg,  #5b982a , #67686a , black );
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.withdraw-form label {
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.withdraw-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.withdraw-form a {
+    color: #5b982a;
+    text-decoration: underline;
+}
+
+.submit-button {
+    padding: 12px;
+    background-color: #5b982a;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #4a7d23;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .withdraw-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .balance-info, .withdraw-form {
+        width: 100%;
+    }
+}

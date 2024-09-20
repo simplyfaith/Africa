@@ -1,0 +1,207 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(135deg,  #5b982a , #67686a , black );
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+
+
+
+  /* Header for the Available Products */
+  .product-header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.product-header h1 {
+    font-size: 2.5rem;
+    color: white; /* Solid white color */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+  /* Ensure the header has some padding in mobile view */
+  @media screen and (max-width: 768px) {
+    .product-header h1 {
+      font-size: 2rem;
+      padding: 0 10px;
+    }
+  }
+
+  
+
+/* Back button container to align it properly */
+.back-button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+  }
+  
+  /* Back button styling */
+  .back-button {
+    background-color: #70dd80; /* Dark button background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #28a745; /* Match green theme when hovered */
+    color: #fff;
+  }
+  
+  .back-button:focus {
+    outline: none;
+  }
+  
+  /* Make the back button responsive on mobile */
+  @media screen and (max-width: 768px) {
+    .back-button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+
+
+  /* Main Product Container */
+  .product-card {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr 1fr; /* Adjust grid for larger image */
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product Image with Unique Shape */
+  .product-image {
+    width: 150px; /* Larger width */
+    height: 150px; /* Larger height */
+    object-fit: cover; 
+    transition: transform 0.4s ease;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Hexagon shape */
+    border: 5px solid #28a745; /* Green border around the image */
+  }
+  
+  .product-card:hover .product-image {
+    transform: scale(1.1);
+  }
+  
+  /* Product Details */
+  .product-details {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-details h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* Floating Price Section */
+  .product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  /* Invest Button */
+  .invest-btn {
+    background: linear-gradient(135deg,  #5b982a , #67686a , black );
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .invest-btn:hover {
+    background-color: #ff3d00;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .product-card {
+      grid-template-columns: 1fr 3fr; 
+    }
+  
+    .product-price {
+      font-size: 1.2rem;
+      top: 15px;
+      right: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .product-card {
+      grid-template-columns: 1fr; /* Stack all elements on top of each other */
+      text-align: center;
+    }
+  
+    .product-details {
+      padding-left: 0;
+    }
+  
+    .product-price {
+      top: 10px;
+      right: 10px;
+    }
+  
+    .product-image {
+      margin: 0 auto; /* Center the image */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .product-card {
+      padding: 15px;
+    }
+  
+    .invest-btn {
+      width: 100%; /* Full-width button on smaller devices */
+    }
+  
+    .product-image {
+      width: 120px; /* Reduce image size for smaller screens */
+      height: 120px;
+    }
+  }
+  

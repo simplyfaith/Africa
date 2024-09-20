@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotelAfrica</title>
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/Image/gott.png" alt="Gotel Africa Logo">
+                <h1>GotelAfrica</h1>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="https://wa.link/81eumj">Contact US</a></li>
+                <li><a href="registeration.html"><button class="btn">Get Started</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <!-- Profile Information -->
+        <div class="form-section">
+            <h2>Profile Information</h2>
+            <p>Update your account's profile information and email address.</p>
+            <input type="text" placeholder="Name" value="">
+            <input type="email" placeholder="Email" value="faithtaiwo745@gmail.com">
+            <button type="submit">Save</button>
+        </div>
+    
+        <!-- Update Password -->
+        <div class="form-section">
+            <h2>Update Password</h2>
+            <p>Ensure your account is using a long, random password to stay secure.</p>
+            <input type="password" placeholder="Current Password">
+            <input type="password" placeholder="New Password">
+            <input type="password" placeholder="Confirm Password">
+            <button type="submit">Save</button>
+        </div>
+    
+        <!-- Delete Account -->
+        <div class="form-section">
+            <h2>Delete Account</h2>
+            <p>Once your account is deleted, all of its resources and data will be permanently deleted.</p>
+            <button class="delete-btn" type="submit">Delete Account</button>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>Building  the future generation with Science and technology.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="https://wa.link/81eumj">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: contact@gotelafrica.com </p>
+            <p>Phone: +234 816 020 7731</p>
+            <p>Address: Suit B2, Tahalili Complex Opposite Total Filling StationAngwan-Gede Along Jikwoyi , Kurudu Road , FCT Abuja</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100063805844998"><i class="fab fa-facebook-f"></i></a>
+                <a href=" https://www.instagram.com/gotelafrica1"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.link/81eumj"><i class="fab fa-whatsapp"></i></a> 
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Gotelafrica. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById("menu-icon").addEventListener("click", function() {
+            var navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
+
+

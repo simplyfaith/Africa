@@ -1,0 +1,126 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #5b982a, #67686a, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header and back button styling */
+h1 {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: #67686a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: #4a4a4a;
+}
+
+/* Invitation section */
+.invite-section {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.invite-section p, .invite-section h2 {
+    margin: 10px 0;
+}
+
+.copy-button {
+    background-color: #5b982a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #4a7d23;
+}
+
+.invite-link {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+/* Table section */
+.table-section {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead tr {
+    background-color: #67686a;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.no-transaction {
+    text-align: center;
+    padding: 20px 0;
+}
+
+table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .invite-link {
+        font-size: 0.9rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
